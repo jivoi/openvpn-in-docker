@@ -1,6 +1,7 @@
 #!/bin/bash
 #=GENERATE CLIENT CERTIFICATES AND CONFIG FILES
 
+OVPN_DATA="ovpn-data"
 CLIENTNAME=$1
 
 usage(){
