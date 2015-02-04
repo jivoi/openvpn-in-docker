@@ -8,6 +8,9 @@ usage(){
         exit 1
 }
 
+# invoke  usage
+# call usage() function if CLIENTNAME not supplied
+[[ $# -eq 0 ]] && usage
 
 sudo apt-get install openvpn
 sudo install -o root -m 400 $CLIENTNAME.ovpn /etc/openvpn/$CLIENTNAME.conf
